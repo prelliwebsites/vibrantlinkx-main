@@ -34,20 +34,22 @@
   ==================================*/
     /*
 
-  /*---------- 01. On Load Function ----------*/
-    $(window).on("load", function () {
+/*---------- 01. On Load Function ----------*/
+$(window).on("load", function () {
+    setTimeout(function () {
         $(".preloader").fadeOut();
-    });
+    }, 4000); // 4 seconds timeout
+});
 
-    /*---------- 02. Preloader ----------*/
-    if ($(".preloader").length > 0) {
-        $(".preloaderCls").each(function () {
-            $(this).on("click", function (e) {
-                e.preventDefault();
-                $(".preloader").css("display", "none");
-            });
+/*---------- 02. Preloader ----------*/
+if ($(".preloader").length > 0) {
+    $(".preloaderCls").each(function () {
+        $(this).on("click", function (e) {
+            e.preventDefault();
+            $(".preloader").css("display", "none");
         });
-    }
+    });
+}
 
     /*---------- 03. Mobile Menu Active ----------*/
     $.fn.thmobilemenu = function (options) {
