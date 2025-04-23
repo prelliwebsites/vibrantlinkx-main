@@ -34,6 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Email headers
     $email_headers = "From: Your Website <no-reply@yourdomain.com>\r\n";
     $email_headers .= "Reply-To: $email\r\n";
+    
 
     // Send the email
     if (mail($recipient, $email_subject, $email_content, $email_headers)) {
