@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Recipient email
-    $recipient = "Tomeniomarklaurence4@gmail.com"; // Change to your email
+    $recipient = "inquiry@vibrantlinkx.com"; // Change to your email
 
     // Email subject
     $email_subject = "New contact form submission: $subject_input";
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Message:\n$message\n";
 
     // Email headers
-    $email_headers = "From: VibrantLinkX <no-reply@yourdomain.com>\r\n";
+    $email_headers = "From: VibrantLinkX <no-reply@vibrantlinkx.com>\r\n";
     $email_headers .= "Reply-To: $email\r\n";
     
 
