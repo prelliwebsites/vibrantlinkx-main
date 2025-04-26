@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_content .= "Message:\n$message\n";
 
     // Email headers
-    $email_headers = "From: Your Website <no-reply@yourdomain.com>\r\n";
+    $email_headers = "From: VibrantLinkX <no-reply@yourdomain.com>\r\n";
     $email_headers .= "Reply-To: $email\r\n";
     
 
