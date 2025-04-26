@@ -38,7 +38,7 @@
 $(window).on("load", function () {
     setTimeout(function () {
         $(".preloader").fadeOut();
-    }); // 4 seconds timeout
+    });
 });
 
 /*---------- 02. Preloader ----------*/
